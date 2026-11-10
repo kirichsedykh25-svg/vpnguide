@@ -1,9 +1,14 @@
 # VPN Guide
 
-Static mirror of https://site-22166.host-ai.pro/ for https://vpnguide.site.
+Публичный справочник: https://vpnguide.site/ . Исходная версия была перенесена с site-22166.host-ai.pro.
 
-64 HTML pages, original client JavaScript and CSS, downloaded images and fonts.
+- 61 существующая полная статья, разделы, поиск и отдельные страницы.
+- Яндекс Метрика: 114170972.
+- При открытии страницы и затем каждые пять минут сайт получает свежие тексты и индивидуальные обложки из редакционного хранилища.
+- Одинаковые фотографии между статьями запрещены. Обложка принадлежит конкретной версии текста; общих изображений-заглушек нет.
+- Редактура и генерация изображений выполняются облачными заданиями Sites, без ежедневной ручной публикации в GitHub.
+- Публичный read-only источник: https://infovpn.site/vpnguide-content/api/articles . Право записи и служебные токены посетителям не передаются.
 
-GitHub Pages: enable GitHub Actions under Settings > Pages. Custom domain: vpnguide.site. Configure DNS at the registrar.
+npm run build обновляет статические страницы из актуального публичного источника (или сохранённого исходного набора при недоступности сети). npm test проверяет статьи, счётчик, безопасность текста и версионность фотографий. Дополнительных npm-зависимостей нет.
 
-Two source Unsplash images return HTTP 404. Browser visual verification remains pending.
+GitHub Pages публикует ветку main из корня; .nojekyll сохраняется. В браузере всегда дополнительно загружается актуальное редакционное содержимое. Секреты отсутствуют в репозитории.
